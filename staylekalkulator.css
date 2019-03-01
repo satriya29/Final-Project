@@ -1,0 +1,155 @@
+h1{
+    font-size: 16 px;
+    font-family: Harrington;
+    margin-top: 12px;
+}
+
+* {
+    text-align:center;
+    box-sizing: border-box;
+}
+
+#kalkulator {
+    border-radius: 31px;
+     width: 325px;
+     height: 46px;
+     margin: 100px auto;
+     padding: 10px 20px 9px;
+    }
+html {
+  background: linear-gradient(50deg,#18ee05,#e8f806);
+
+}
+
+.atas span.clear{
+  float: left;
+}
+
+
+.atas .layar {
+  margin-top: 12px;
+  margin-bottom:9px;
+  width: 100%;
+  height:61px;
+  padding: 1 10px;
+  color: white;
+  background: rgba(5, 228, 248, 0.8);
+  border-radius: 15px;
+  font-size: 30px;
+  line-height: 90px;
+  text-align: right;
+  overflow:auto;
+}
+
+
+#tombol span, .atas span.clear {
+  top: 0;
+  background: #A1FFCE;
+  text-align: center;
+  width: 64px;
+  height: 48px;
+  border-radius: 5px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.3);
+  margin: 0 7px 11px 0;
+  color: black;
+  line-height: 46px;
+  user-select: none;
+  outline: 0 solid;
+  transition: all 0.2s ease;
+  float: left;
+  position: relative;
+  font-size:27px;
+  cursor: pointer;
+}
+
+#tombol  {
+    overflow: hidden;
+  }
+  
+
+#tombol span.operator {
+  background: rgb(103, 255, 197);
+  color: black;
+  margin-right: 0;
+}
+
+#tombol span.operator sup {
+  font-size: 55%;
+  color:#f1c851;
+  vertical-align: top;
+
+}
+
+#tombol span.equall {
+  background: #87fd01;
+  color: black;
+  width: 269px;
+}
+
+span.clear {
+  background: #FFEB3B;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  color: #ff00cc;
+}
+
+
+#tombol span:hover {
+  background: #00eff1;
+  color: white;
+}
+
+#tombol span.equall:hover {
+  background: #00ff37;
+
+  color: #ffffff;
+}
+
+
+#tombol span.equall:active {
+  box-shadow: 0px 0px #e8f39f;
+  top: 3px;
+}
+
+atas span.clear:active {
+  top: 3px;
+  box-shadow: 0px 0px #d3545d;
+}
+
+#tombol span.operator:hover {
+    background: #00ff37;
+    color: #ffffff;
+  }
+  
+  #atasspan.clear:hover {
+    background: #ffc107;
+    box-shadow: 0px 4px #d3545d;
+    color: white;
+  }
+  
+  #tombol span.clear:hover {
+    background: #ffc107;
+    color: white;
+  }
+  
+  
+  #tombol span:active {
+    box-shadow: 0px 0px #00ff37;
+    top: 4px;
+  }
+  
+.float{
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:40px;
+  right:40px;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.my-float{
+  width:50px;
+  height:50px;
+}

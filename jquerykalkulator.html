@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="tampilan.css">
+
+	<title>Kalkulator menggunakan JavaScript</title>
+</head>
+<body>
+<center> 
+	<h3>Kalkulator menggunakan JQuery</h3>
+	<h3> Cobalah kalkulatornya </h3></center>
+	
+<table align="center">
+	<tr>
+		<td> Angka pertama : </td>
+	</tr>
+	<tr>
+		<td> <input type="text" id="angka1"> </td>
+	</tr>
+	<tr>
+		<td> Angka Kedua : </td>
+	</tr>
+	<tr>
+		<td> <input type="text" id="angka2"> </td>
+	</tr>
+	<tr>
+		<td> Pilihlah Operatornya : </td>
+		<td>
+			<select id="operator">
+                <option value="*">x</option>
+                <option value="/">/</option>
+				<option value="-">-</option>
+				<option value="+">+</option>
+
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button id="hasil"> Hitung</button>
+			<button id="clear"> Reset</button>
+		</td>
+	</tr>
+	
+</table>
+
+</center>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+
+$('#hasil').on('click',function () {
+		var angka1 = $('#angka1').val();
+		var angka2 = $('#angka2').val();
+		var operator = $('#operator').val();
+
+	if (angka1== '' && angka2 == '') {alert('Inputan tidak boleh kosong');}
+	else{
+		switch(operator){
+			case '+':
+			 var hasil=parseInt(angka1.value)+ parseInt (angka2.value);
+			 //var hasil=angka1 + angka2;
+			alert("Hasil penjumlahannya adalah "+hasil);
+			break;
+			case '-':
+			var hasil=angka1 - angka2;
+			alert("Hasil pengurangannya adalah "+hasil);
+			break;
+			case '*':
+			var hasil=angka1 * angka2;
+			alert("Hasil perkaliannya  adalah "+hasil);
+			break;
+			case '/':
+			var hasil=angka1 / angka2;
+			alert("Hasil pembagiannya adalah "+hasil);
+			break;
+		}
+	}
+	});
+		
+</script>
+    <form action="karya.html">
+            <button type="Submit" name="botton">Kembali</button>
+    </form
+</body>
+</html>
