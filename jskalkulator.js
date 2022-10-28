@@ -65,13 +65,13 @@ for(var i = 0; i < tombol.length; i++) {
 
 document.onkeydown = function(event) {
 
-	var key_press = String.fromCharCode(event.keyCode);
-	var key_code = event.keyCode;
-	var input = document.querySelector('.layar');
-	var inputVal = input.innerHTML;
-	var btnVal = this.innerHTML;
-  	var lastChar = inputVal[inputVal.length - 1];
-  	var equation = inputVal;
+	let key_press = String.fromCharCode(event.keyCode);
+	let key_code = event.keyCode;
+	let input = document.querySelector('.layar');
+	let inputVal = input.innerHTML;
+	let btnVal = this.innerHTML;
+  	let lastChar = inputVal[inputVal.length - 1];
+  	let equation = inputVal;
 	
 
 	equation = equation.replace(/x/g, '*').replace(/÷/g, '/').replace(/\^/g, '**');
